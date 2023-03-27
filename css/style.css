@@ -95,14 +95,62 @@ h1{
 }
 
 /* regole main */
+.contenitore-colonna{
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
 
+/* .container-selezione-piani{
+    width: 50%;
+} */
 
 .cerchio{
     border: 2px blue solid;
     border-radius: 50%;
 }
+.colonna{
+    margin: 0 auto ;
+    width: calc(100%/3 - 20px);;
+    border: 2px solid grey ;
+}
+.selezione-singolo-azien-team{
+    border-bottom: 2px solid grey;
+    text-align: center;
+    padding: 10px 0;
 
+}
 
+.selezione-piano{
+    margin: 0px 10px
+
+}
+h3{
+    padding-bottom: 10px;
+}
+.prize{
+    display: block;
+}
+.icone-abbonamenti{
+    display: flex;
+    padding: 14px 0;
+}
+.bt-selezione-piani{
+    display: block;
+}
+h5{
+    padding: 10px 0;
+}
+.marker{
+    display: flex;
+    padding: 10px 0;
+}
+.marker::before{
+    content: "\2713";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(4, 50, 45);
+}
 
 
 
