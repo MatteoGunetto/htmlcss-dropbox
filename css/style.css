@@ -11,13 +11,13 @@ ul{
 .bottone{
     background-color: blue;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border-style: none;
 }
 
 /* regole header */
 header{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 80px;
     display: flex;
@@ -70,7 +70,7 @@ h1{
 }
 .conteiner-jumbotron-foto-text{
     display: flex;
-    padding-top: 59px;
+    padding-top: 35px;
 }
 
 .jumbotron-text{
@@ -78,9 +78,9 @@ h1{
     margin: 0 auto;
 }
 .bt-jumbotron{
-    margin-top: 48px;
+    margin-top: 30px;
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .jumbotron-foto{
     width: 60%;
@@ -90,8 +90,8 @@ h1{
     max-width: 100%;
 }
 .arrow{
-    padding-top: 50px;
-    font-size: 60px;
+    padding-top: 55px;
+    font-size: 50px;
 }
 
 /* regole main */
@@ -294,22 +294,26 @@ h5{
 }
 
 /* regole faq */
+h2{
+    margin: 62px 0;
+    font-size: 45px;
+}
 .sezione-faq{
     padding: 100px 0;
     width: calc(50% - 20px);
     margin: 0 auto;
 }
 .faq-conteiner{
-    border-top: 2px solid black;
-    padding: 10px 0;
+    border-top: 1px solid black;
+    padding: 35px 0;
 }
 .fa-angle-down{
     padding-left: 200px;
 }
 .faq-conteiner-bottom{
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 35px 0;
 }
 h4{
     display: inline-block;}
