@@ -314,4 +314,48 @@ h5{
 h4{
     display: inline-block;}
 /* regole footer */
+.footer-conteriner{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.footer-row{
+    width: 65%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.footer-menu{
+    width: calc(100%/5);
+    background-color: rgb(0, 0, 0);
+}
+.footer-list{
+    color: white;
+    
+}
+.footer-list li{
+    color: white;
+    margin-top: 25px;
+    
+}
+.footer-list li:first-child{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    margin-top: 100px;
+}
+.lenguage{
+    color: grey;
+    border-top: 2px solid grey;
+    width: 40%;
+    margin-top: 120px;
+    padding: 24px 0;
+
+}
+
+
+
+
+
+
+
 
