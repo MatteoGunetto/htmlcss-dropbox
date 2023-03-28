@@ -95,15 +95,13 @@ h1{
 }
 
 /* regole main */
+
+/* regole generale selezione piani */
 .contenitore-colonna{
     display: flex;
     width: 50%;
     margin: 0 auto;
 }
-
-/* .container-selezione-piani{
-    width: 50%;
-} */
 
 .cerchio{
     border: 2px blue solid;
@@ -111,7 +109,7 @@ h1{
 }
 .colonna{
     margin: 0 auto ;
-    width: calc(100%/3 - 20px);;
+    width: calc(100%/3 - 20px);
     border: 2px solid grey ;
 }
 .selezione-singolo-azien-team{
@@ -151,6 +149,53 @@ h5{
     font-weight: bold;
     color: rgb(4, 50, 45);
 }
+.container-enterprice{
+    width:calc(50% - 20px);
+    margin: 0 auto;
+    border: 2px solid grey;
+
+}
+.selezione-team{
+    border-bottom: 2px solid grey;
+    text-align: center;
+    
+}
+.enterprise{
+    display: flex;
+    align-items: flex-start;
+
+}
+.enterprise-testo{
+    width: 70%;
+}
+.enterprise-bottone{
+    width: 30%;
+}
+
+
+/* regole main sezione trova partner*/
+
+.trova-partner{
+    margin: 0 auto;
+    width:calc(50% - 20px);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.trova-partner-testo{
+    width: 40%;
+}
+.trova-partner-foto{
+    width: 60%;
+}
+.img-partner{
+    max-width: 100%;
+}
+.bt-partner{
+    background-color: white;
+    border: 1px solid grey;
+    color: grey;
+}
+
 
 
 
