@@ -210,8 +210,108 @@ h5{
 .azione-padding{
     padding-right: 35px;
 }
+.numero-team{
+    width: 30%;
+}
+.aziende-left{
+    width: calc(100%/3);
+    height: 640px;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-aziende{
+    object-fit: contain;
+    width: 200px;
+    align-items: center;
+}
+.quadrati{
+    width: calc(100%/2);
+}
+.designt{
+    background-color: brown;
+}
+.asu{
+    background-color: rgb(42, 52, 165);
+}
+.unf{
+    background-color: rgb(42, 165, 42);
+}
+.topps{
+    background-color: rgb(185, 24, 166);
+}
 
+.aziende-selezionata{
+    width: calc(100%/3);
+    background-color: rgb(7, 79, 55);
+    overflow: auto;
+    
+}
+.aziende-rigth{
+    width: calc(100%/3);
+    height: 640px;
+    background-color: rgb(13, 226, 155);
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.hearst-corp{
+    background-color: rgb(185, 24, 166);
+}
 
+.lonely-planet{
+    background-color: rgb(42, 165, 42);
+}
+.world-bicycle-relief{
+    background-color: rgb(24, 24, 185);
+}
+.clear-channel{
+    background-color: rgb(165, 42, 42);
+
+}
+.aziende-lungo-conteiner{
+    width: 100%;
+    height: 400px;
+    background-color: aquamarine;
+}
+.aziende-lungo-flex{
+    width: calc(50% - 20px);
+    margin: 0 auto;
+    display: flex;
+}
+.azienda-lungo-testo{
+    font-size: 40px;
+    color: brown;
+    width: 60%;
+}
+.azienda-lungo-bottone{
+    width: 40%;
+}
+.bt-aziende{
+    background-color: white;
+    border: 2px solid grey;
+    color: black;
+}
+
+/* regole faq */
+.sezione-faq{
+    padding: 100px 0;
+    width: calc(50% - 20px);
+    margin: 0 auto;
+}
+.faq-conteiner{
+    border-top: 2px solid black;
+    padding: 10px 0;
+}
+.fa-angle-down{
+    padding-left: 200px;
+}
+.faq-conteiner-bottom{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+}
+h4{
+    display: inline-block;}
 /* regole footer */
 
