@@ -173,7 +173,7 @@ h5{
 }
 
 
-/* regole main sezione trova partner*/
+/*sezione trova partner*/
 
 .trova-partner{
     margin: 0 auto;
@@ -195,7 +195,21 @@ h5{
     border: 1px solid grey;
     color: grey;
 }
+/* operazioni dropbox buisness*/
+.row{
+    width: calc(50% - 20px);
+    margin: 0 auto;
+}
+.colonne{
+    display: flex;
 
+}
+.img-operazioni{
+    max-width: 100%;
+}
+.azione-padding{
+    padding-right: 35px;
+}
 
 
 
