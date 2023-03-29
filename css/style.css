@@ -14,6 +14,10 @@ ul{
     padding: 12px;
     border-style: none;
 }
+.bottone:hover{
+    filter: opacity(0.8);
+    cursor: pointer;
+}
 
 /* regole header */
 header{
@@ -38,13 +42,21 @@ header{
     justify-content: space-evenly;
     gap: 30px;
 }
+.menu-left li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .menu-right{
     display: flex;
     gap: 30px;
 }
 .header-menu-right{
     margin: 362px
-
+}
+.menu-right li:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .bt-header{
     width: 80px;
@@ -104,7 +116,10 @@ h1{
     margin: 0 auto;
 }
 .fa-circle-dot{
-    color: blue;
+    color: rgb(0, 97, 255);
+}
+.fa-circle-dot:hover{
+    cursor: pointer;
 }
 .menu-piani{
     display: flex;
@@ -402,14 +417,20 @@ h4{
 }
 .footer-list li{
     color: white;
-    margin-top: 25px;
-    
+    margin-top: 25px;   
+}
+.footer-list li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
 }
 .footer-list li:first-child{
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 35px;
     margin-top: 100px;
+    text-decoration: none;
+    cursor: context-menu;
 }
 .lenguage{
     color: grey;
