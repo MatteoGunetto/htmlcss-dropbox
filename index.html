@@ -41,7 +41,7 @@
                     <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Buisness è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>  
                     <button class="bottone bt-jumbotron">Inizia la tua prova gratuita</button>
                     <div class="text">Annulla in qualsiasi momento</div>
-                    <div class="arrow"><i class="fas fa-arrow-down"></i></div>
+                    <div class="arrow"><i class="fa-solid fa-arrow-down"></i></div>
                 </div>
                 <div class="jumbotron-foto">
                     <img src="img/jumbo.png" alt="img.jumbotron" class="jumbo">
@@ -54,12 +54,14 @@
     <main>
         <!-- selezione piano -->
         <section class="container-selezione-piani">
-            <h2>Trova il piano buisness che fa per te</h2>
+            <div class="testo-contenitore-piani">
+                <h2>Trova il piano buisness che fa per te</h2>
                 <div>
-                    <ul>
-                        <li><button class="cerchio"> </button>Fatturazione mensile</li>
-                        <li >Fatturazione annuale</li>
+                    <ul class="menu-piani">
+                        <li><i class="fa-solid fa-circle-dot"></i>Fatturazione mensile</li>
+                        <li><i class="fa-regular fa-circle"></i>Fatturazione annuale</li>
                     </ul>
+                </div>
                 </div>    
                         <div class="contenitore-colonna">
                             <div class="colonna">
@@ -70,7 +72,7 @@
                                     <h3>Professional</h3>
                                     <span class="prize">€ 12.00</span>
                                     <span>/mese</span>
-                                    <ul>
+                                    <ul class="menu-proposte">
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-user"></i><span>1 Utente</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-folder"></i><span> 5 TB di spazio di archiviazione sicuro</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-share-nodes"></i><span>Funzioni di produttività premium e condivisione di file semplice e sicura</span></li>
@@ -86,13 +88,13 @@
                             </div>
                             <div class="colonna">
                                 <div class="selezione-singolo-azien-team">
-                                    <i class="fa-solid fa-user"></i>Team
+                                    <i class="fa-solid fa-people-group"></i>Team
                                 </div>
                                 <div class="selezione-piano">
                                     <h3>Advanced</h3>
                                     <span class="prize">€ 18.00</span>
                                     <span>/utente/mese</span>
-                                    <ul>
+                                    <ul class="menu-proposte">
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-user"></i><span>3 o più Utenti</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-folder"></i><span>Tutto lo spazio di cui ha bisogno il tuo team</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-share-nodes"></i><span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span></li>
@@ -117,7 +119,7 @@
                                     <h3>Enterprice</h3>
                                     <span class="prize">Contattaci</span>
                                     <span>-</span>
-                                    <ul>
+                                    <ul class="menu-proposte">
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-user"></i><span>10 o più Utenti</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-folder"></i><span>Soluzioni personalizzabili per la tua azienda</span></li>
                                         <li class="icone-abbonamenti"><i class="fa-solid fa-share-nodes"></i><span>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</span></li>
@@ -136,12 +138,12 @@
                         <div class="container-selezione-piani">
                             <div class="container-enterprice">
                                 <div class="selezione-team">
-                                    <i class="fa-solid fa-user"></i> Singolo
+                                    <i class="fa-solid fa-building"></i></i> Team
                                 </div>
                                 <div class="enterprise">
                                     <div class="enterprise-testo">
                                         <h3>Enterprice</h3>
-                                        <h5>Contatta l'ufficio vendite per i Prezzi</h5>
+                                        <h5 class="titolo-enterprise">Contatta l'ufficio vendite per i Prezzi</h5>
                                         Soluzioni personalizzate e supporto per aiutare i professionisti IT nella gestione su qualsiasi scala
                                     </div>
                                     <div class="bottone bt-enterprise">
@@ -156,7 +158,7 @@
             <div class="conteinre-trova-partner">
                 <div class="trova-partner">
                     <div class="trova-partner-testo">
-                        <h2>Entra in contatto con un partner Dropbox</h2>
+                        <h2 id="titolo-partner">Entra in contatto con un partner Dropbox</h2>
                         <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
                         <button class="bottone bt-partner">Trova un partner</button>
                     </div>
@@ -169,11 +171,11 @@
             </div>
             
         </section>
-        <!-- operazioni dropbox buisness -->
+        <!-- operazioni dropbox business -->
         <section>
             <div>
                 <div class="row">
-                    <h2>
+                    <h2 id="titolo-dropbox-business">
                         Esegui più operazioni con Dropbox Business
                     </h2>
                     <div class="colonne"> 
@@ -181,21 +183,21 @@
                             <div class="azione-padding">
                                 <img src="img/business-feature-switching-tools.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                         <div>
                             <div class="azione-padding">
                                 <img src="img/business-feature-send-files-it.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                         <div>
                             <div class="azione">
                                 <img src="img/business-feature-coordinate-it.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                     </div>
@@ -204,27 +206,26 @@
                             <div class="azione-padding">
                                 <img src="img/business-feature-integrations-it.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                         <div>
                             <div class="azione-padding">
                                 <img src="img/business-feature-multi-device.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                         <div>
                             <div class="azione">
                                 <img src="img/business-feature-security.png" alt="switching tools" class="img-operazioni">
                                 <h3>Passa di meno da uno strumento all'altro</h3>
-                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e <u>Dropbox Paper</u> direttamente da Dropbox.</p>
+                                <p>Porta a termine le attività quotidiane con un solo strumento. Crea, modifica e condividi contenuti cloud da Documenti, Fogli e Presentazioni di Google, file Microsoft Office e Dropbox Paper direttamente da Dropbox.</p>
                             </div>
                         </div>
                     </div>
                     <div class="numero-team">
-                        <!-- h2 font 35px -->
-                    <h2>Più di 500.000 team utilizzano Dropbox business</h2> 
+                    <h2 id="titolo-numero-team">Più di 500.000 team utilizzano Dropbox business</h2> 
                     <a href="#">Scopri di più sui nostri clienti</a>
                     </div>
                 </div>
@@ -238,7 +239,7 @@
                         <div class="aziende-left">
                             <div class="quadrati designt">
                                 <div>
-                                    <img src="img/designit.svg" alt="" class="img-aziende">
+                                    <img src="img/designit.svg" alt="" class="img-aziende designt-img">
                                 </div>
                             </div>
                             <div class=" quadrati asu">
@@ -259,11 +260,10 @@
                         </div>
                         <div class="aziende-selezionata">
                             <div>
-                                <img src="img/designit.svg" alt="" class="img-aziende">
+                                <img src="img/designit.svg" alt="" class="img-azienda-selezionata">
                             </div>
-                            <hr>
-                                <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
-                                <p>Morten Thomsen, Global IT Lead</p>
+                                <p class="testo-azienda-selezionata"><span id="border-top">"I membri del</span> nostro team lavorano costantemente in Paesi, fusi orari e uffici diversi. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox e Dropbox Paper. Ora molte soluzioni sono compatibili con queste esigenze, ma nessuna è facile quanto Dropbox Paper".</p>
+                                <p class="testo-azienda-selezionata">Morten Thomsen, Global IT Lead</p>
                         </div>
                         <div class="aziende-rigth">
                             <div class=" quadrati world-bicycle-relief">
